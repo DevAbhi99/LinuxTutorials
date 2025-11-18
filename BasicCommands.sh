@@ -111,5 +111,68 @@ chmod 755 <filename> #only owner read, write and execute whereas others can read
 chmod 644 <filename> #onwer can read and write and others can just read
 chmod 600 <filename> #only owners can read and write
 
+chown # add user groups
 
 
+#echo is for printing and debugging
+
+echo "hello world"  #it prints hello world
+
+
+# process
+
+ps #It is used to check processes in Linux
+
+#check python related process in the system
+ps aux | grep python
+
+#check web related process in the system
+ps aux | grep nginx
+
+# kill processes
+
+kill <process id>
+
+# force kill processes
+
+kill -9 <process id>
+
+# check memory and cpu usage in linux
+top
+
+#check free space in linux
+free -h
+
+#check disk space
+df -h
+
+#update the linux system
+apt-get update
+
+#apt-get is a package manager use to install packages
+
+
+#network tools
+
+
+#install net-tools for using the below tool;s
+apt-get install net-tools
+ifconfig # for finding ip address of the linux system
+netstat #does same thing what are the services listening, open ports etc
+
+#install iputils-ping
+apt-get install iputils-ping
+ping <domain> or ipaddress #check response from a website
+
+#install dnsutils
+apt-get install dnsutils
+nslookup #find ipaddress of the domain name
+
+#nmap
+
+apt-get install nmap
+nmap <ipaddress> #basic scan
+
+nmap -p <port> <ipadress> # to check if the ip address is accessible at the mentioned port
+
+nmap -sV <ipdrress> or <doman name> # check what services are running on the ip address
