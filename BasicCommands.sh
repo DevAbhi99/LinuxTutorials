@@ -106,13 +106,16 @@ vim <filename>
 
 #chmod command is used to change the permission of the file
 
-chmod 777 <filename> #full permission to read, write and execute
-chmod 755 <filename> #only owner read, write and execute whereas others can read and execute
-chmod 644 <filename> #onwer can read and write and others can just read
-chmod 600 <filename> #only owners can read and write
+#4 is for read permission, 2 is for write permission and 1 is for execute permission
+# If we want to combine these permissions then we can add up these permissions
+
+chmod 7 <filename> #4(read)+2(write)+1(execute)
 
 chown # add user groups
 
+chown abhi <file or folder>
+
+chown abhi:group1 <file or folder> #owner:group
 
 #echo is for printing and debugging
 
@@ -150,6 +153,40 @@ df -h
 apt-get update
 
 #apt-get is a package manager use to install packages
+
+
+# add a user just like root
+
+sudo adduser abhi
+
+#set passsword user abhi
+
+sudo passwd abhi
+<Then type the password>
+
+#switch to abhi
+
+su abhi
+
+# to check what is there in a user
+
+finger abhi
+
+# To get help and information regarding a command
+
+man
+
+ #zip a particular file in a folder
+
+ zip <zipfilename.zip> <file that you want to zip>
+
+ #To unzip the file we use
+
+ unzip <zipfilename.zip>
+
+ #to install using an url
+
+ wget <url>
 
 
 #network tools
