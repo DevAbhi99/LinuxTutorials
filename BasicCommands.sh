@@ -213,3 +213,35 @@ nmap <ipaddress> #basic scan
 nmap -p <port> <ipadress> # to check if the ip address is accessible at the mentioned port
 
 nmap -sV <ipdrress> or <doman name> # check what services are running on the ip address
+
+
+#ufw
+
+It is used to enable and disable and manage firewall in our system
+
+sudo ufw enable #to enable
+
+sudo ufw disable #to disable
+
+sudo ufw allow 80/tcp  # allows port 80 on our linux machine with tcp protocol
+
+
+#nanofetch
+
+it gives information about our linux but more info and in visual format it is an enhanced version of uname
+
+#kill and pkill
+
+both kills processes but kill ends processes on the basis of pid or process id
+
+pkill ends processes on the basis of some patterns
+
+#systemctl
+
+it is used to manage services in the linux system like apache, nginx
+
+sudo systemctl status #checks running status of the services in linux
+
+sudo systemctl start nginx #check nginx service
+
+
