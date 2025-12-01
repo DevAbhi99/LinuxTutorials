@@ -244,4 +244,14 @@ sudo systemctl status #checks running status of the services in linux
 
 sudo systemctl start nginx #check nginx service
 
+#creating virtual env
+apt-get install python3-venv
+
+python3 -m venv <venv name>
+
+source <venv name>/bin/activate
+
+
+
+
 
