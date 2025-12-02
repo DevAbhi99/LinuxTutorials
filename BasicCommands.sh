@@ -252,6 +252,7 @@ python3 -m venv <venv name>
 source <venv name>/bin/activate
 
 
-
+#Forceful removal of a folder 
+rm -f <foldername>
 
 
