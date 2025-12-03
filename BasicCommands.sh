@@ -256,3 +256,28 @@ source <venv name>/bin/activate
 rm -f <foldername>
 
 #sort command is used to sort the content of a file in a specific order and then print the content of the file
+
+#1) 
+sort <file.txt> #does basic ascending sorting
+
+#2) 
+sort -r <file.txt> #reverse the sorting
+
+#3) 
+sort -n <file.txt> #sort as per number
+
+#4)
+
+sort -nr <file.txt> #reverse the sort as per number
+
+#5) 
+
+sort <file.txt> | uniq
+
+#6) 
+
+sort -k2,2 <file.txt> #mentions the column that you  want to sort
+
+#7)
+
+sort -u <file.txt>  #removes duplicate lines
