@@ -255,4 +255,4 @@ source <venv name>/bin/activate
 #Forceful removal of a folder 
 rm -f <foldername>
 
-
+#sort command is used to sort the content of a file in a specific order and then print the content of the file
